@@ -1,9 +1,10 @@
 public class Bowling {
-    int[] rolls;
-    int currentRoll;
+    private int[] rolls;
+    private int currentRoll;
 
     public Bowling() {
         this.rolls = new int[21];
+        this.currentRoll = 1;
     }
 
     public void roll(int point) {
@@ -14,7 +15,7 @@ public class Bowling {
         int score = 0;
         int frame = 0;
 
-        for (int ganeCount = 0; ganeCount < 10; ganeCount++) {
+        for (int gameCount = 0; gameCount < 10; gameCount++) {
             if (isStrike(frame)) {
                 score += 10 + strikeBonus(frame);
                 frame++;
@@ -38,13 +39,11 @@ public class Bowling {
         return sumOfRolls(frame) == 10;
     }
 
-    private int strikeBonus(int frame) {
+    public int strikeBonus(int frame) {
         return sumOfRolls(frame+1);
     }
 
-    private int spareBonus(int frame) {
-        return rolls[frame+2];
-    }
+    public int spareBonus(int frame) { return rolls[frame+2]; }
 
     private int sumOfRolls(int frame) {
         return rolls[frame] + rolls[frame+1];
