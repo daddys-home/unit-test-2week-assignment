@@ -48,7 +48,7 @@ public class Bowling {
 
     public int spareBonus(int frame) { return rolls[frame+2]; }
 
-    private int sumOfRolls(int frame) {
+    public int sumOfRolls(int frame) {
         return rolls[frame] + rolls[frame+1];
     }
 }
