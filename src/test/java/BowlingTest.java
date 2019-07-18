@@ -55,6 +55,13 @@ public class BowlingTest {
         when(bowling.score()).thenReturn(10);
         assertThat(bowling.score(), Matchers.is(10));
     }
- 
+    @Test
+    public void 스코어를실행시IsStrike가실행도었는지확인하는_테스트(){
+        Bowling bowling = mock(Bowling.class);
+        when((bowling.isStrike(anyInt()))).thenReturn(true);
+        bowling.score();
+        verify(bowling,never()).isStrike(anyInt());
+    }
+
 
 }
