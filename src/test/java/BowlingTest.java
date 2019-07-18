@@ -1,8 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.mockito.Mockito.doThrow;
 
 public class BowlingTest {
     Bowling bowlingGame;
@@ -51,6 +53,15 @@ public class BowlingTest {
 
     }
 
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void sumOfRolls_frame의_값이_20을_넘으면_BoundException()
+    {
+        bowlingGame.sumOfRolls(27);
+        assertThat(bowlingGame.sumOfRolls(20),is(19));
+        doThrow(new ArrayIndexOutOfBoundsException()).when(bowlingGame).sumOfRolls(30);
+
+
+    }
 
     @Test
     public void testStrikeBonus() {

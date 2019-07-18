@@ -49,6 +49,10 @@ public class Bowling {
     public int spareBonus(int frame) { return rolls[frame+2]; }
 
     public int sumOfRolls(int frame) {
+        if(frame>=20)
+        {
+            throw new ArrayIndexOutOfBoundsException();
+        }
         return rolls[frame] + rolls[frame+1];
     }
 }
