@@ -165,12 +165,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트">
+  <component name="RunManager" selected="JUnit.BowlingTest.isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트">
     <configuration name="BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BowlingTest" />
       <option name="METHOD_NAME" value="isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BowlingTest.isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BowlingTest" />
+      <option name="METHOD_NAME" value="isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,6 +208,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BowlingTest.isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트" />
         <item itemvalue="JUnit.BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" />
         <item itemvalue="JUnit.BowlingTest.testSpareBonus" />
         <item itemvalue="JUnit.BowlingTest.testStrikeBonus" />

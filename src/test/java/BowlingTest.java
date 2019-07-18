@@ -48,9 +48,20 @@ public class BowlingTest {
 
     @Test
     public void isStrike_스트라익일때_True를_반환하는지_확인하는_테스트(){
-        
+
         assertThat(bowlingGame.isStrike(1),is(true));
 
     }
+
+    @Test
+    public void isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트(){
+
+        assertThat(bowlingGame.isStrike(2),is(false));
+        assertThat(bowlingGame.isStrike(3),is(false));
+        assertThat(bowlingGame.isStrike(4),is(false));
+
+    }
+
+
 
 }
