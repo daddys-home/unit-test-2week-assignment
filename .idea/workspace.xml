@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/BowlingTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
-              <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,12 +165,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BowlingTest.isSpare_스페어일때_True를_반환하는지_확인하는_테스트">
+  <component name="RunManager" selected="JUnit.BowlingTest.isSpare_스페어가_아닐때_False를_반환하는지_확인하는_테스트">
     <configuration name="BowlingTest.isSpare_스페어일때_True를_반환하는지_확인하는_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BowlingTest" />
       <option name="METHOD_NAME" value="isSpare_스페어일때_True를_반환하는지_확인하는_테스트" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BowlingTest.isSpare_스페어가_아닐때_False를_반환하는지_확인하는_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BowlingTest" />
+      <option name="METHOD_NAME" value="isSpare_스페어가_아닐때_False를_반환하는지_확인하는_테스트" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,23 +216,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BowlingTest.testStrikeBonus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bowling" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BowlingTest" />
-      <option name="METHOD_NAME" value="testStrikeBonus" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BowlingTest.isSpare_스페어가_아닐때_False를_반환하는지_확인하는_테스트" />
         <item itemvalue="JUnit.BowlingTest.isSpare_스페어일때_True를_반환하는지_확인하는_테스트" />
         <item itemvalue="JUnit.BowlingTest.isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트" />
         <item itemvalue="JUnit.BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" />
         <item itemvalue="JUnit.BowlingTest.testSpareBonus" />
-        <item itemvalue="JUnit.BowlingTest.testStrikeBonus" />
       </list>
     </recent_temporary>
   </component>
@@ -236,14 +236,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563410055763</updated>
-      <workItem from="1563410058052" duration="1033000" />
+      <workItem from="1563410058052" duration="1312000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BowlingTest_isStrike_스트라익일때_True를_반환하는지_확인하는_테스트 - 2019.07.18 at 09h 38m 00s.xml">
-      <configuration name="BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BowlingTest_isStrike_스트라익일때_True를_반환하는지_확인하는_테스트 - 2019.07.18 at 09h 38m 49s.xml">
       <configuration name="BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" configurationId="JUnit" />
     </history-entry>
@@ -268,9 +265,15 @@
     <history-entry file="BowlingTest_isStrike_스트라익일때_True를_반환하는지_확인하는_테스트 - 2019.07.18 at 09h 51m 18s.xml">
       <configuration name="BowlingTest.isStrike_스트라익일때_True를_반환하는지_확인하는_테스트" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BowlingTest_isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트 - 2019.07.18 at 09h 53m 47s.xml">
+      <configuration name="BowlingTest.isStrike_스트라이크가_아닐때_False를_반환하는지_확인하는_테스트" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BowlingTest_isSpare_스페어일때_True를_반환하는지_확인하는_테스트 - 2019.07.18 at 09h 55m 28s.xml">
+      <configuration name="BowlingTest.isSpare_스페어일때_True를_반환하는지_확인하는_테스트" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1033000" />
+    <option name="totallyTimeSpent" value="1312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -281,7 +284,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32884097" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -291,7 +294,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,7 +333,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/BowlingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
-          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
