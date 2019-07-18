@@ -1,3 +1,6 @@
+import lombok.Data;
+
+@Data
 public class Bowling {
     private int[] rolls;
     private int currentRoll;

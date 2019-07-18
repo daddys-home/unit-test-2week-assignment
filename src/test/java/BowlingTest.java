@@ -30,8 +30,18 @@ public class BowlingTest {
         bowlingGame.roll(3);
         bowlingGame.roll(10);
         bowlingGame.roll(9);
-        bowlingGame.roll(1);
     }
+
+    @Test
+    public void roll_셋업한_값이_rolls배열에_제대로_들어있는지_테스트()
+    {
+        assertThat(bowlingGame.getRolls()[1],is(10));
+        assertThat(bowlingGame.getRolls()[2],is(8));
+        assertThat(bowlingGame.getRolls()[20],is(9));
+
+    }
+
+
     @Test
     public void testStrikeBonus() {
 
