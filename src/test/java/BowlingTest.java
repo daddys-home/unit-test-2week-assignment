@@ -30,7 +30,7 @@ public class BowlingTest {
         bowlingGame.roll(3);
         bowlingGame.roll(10);
         bowlingGame.roll(9);
-        bowlingGame.roll(1);
+
     }
     @Test
     public void testStrikeBonus() {
