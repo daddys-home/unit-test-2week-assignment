@@ -62,6 +62,15 @@ public class BowlingTest {
 
     }
 
+    @Test
+    public void isSpare_스페어일때_True를_반환하는지_확인하는_테스트(){
+
+
+        assertThat(bowlingGame.isSpare(2),is(true));
+        assertThat(bowlingGame.isSpare(13),is(true));
+
+    }
+
 
 
 }
