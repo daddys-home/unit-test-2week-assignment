@@ -42,6 +42,14 @@ public class BowlingTest {
     }
 
 
+    @Test
+    public void sumOfRolls_frame과_그_다음_값의_합을_잘_반환하는지_테스트()
+    {
+        assertThat(bowlingGame.sumOfRolls(1),is(18));
+        assertThat(bowlingGame.sumOfRolls(2),is(10));
+        assertThat(bowlingGame.sumOfRolls(19),is(19));
+
+    }
 
 
     @Test
