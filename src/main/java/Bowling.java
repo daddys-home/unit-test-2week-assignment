@@ -48,4 +48,5 @@ public class Bowling {
     private int sumOfRolls(int frame) {
         return rolls[frame] + rolls[frame+1];
     }
+
 }
