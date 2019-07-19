@@ -7,7 +7,7 @@ public class Bowling {
 
     public Bowling() {
         this.rolls = new int[21];
-        this.currentRoll = 1;
+        this.currentRoll = 0;
     }
 
     public void roll(int point) {

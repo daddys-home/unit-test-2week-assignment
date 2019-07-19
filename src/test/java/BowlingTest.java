@@ -45,9 +45,9 @@ public class BowlingTest {
     @Test
     public void roll_셋업한_값이_rolls배열에_제대로_들어있는지_테스트()
     {
-        assertThat(bowlingGame.getRolls()[1],is(10));
-        assertThat(bowlingGame.getRolls()[2],is(8));
-        assertThat(bowlingGame.getRolls()[20],is(9));
+        assertThat(bowlingGame.getRolls()[1],is(8));
+        assertThat(bowlingGame.getRolls()[2],is(2));
+        assertThat(bowlingGame.getRolls()[20],is(1));
 
     }
 
@@ -55,9 +55,9 @@ public class BowlingTest {
     @Test
     public void sumOfRolls_frame과_그_다음_값의_합을_잘_반환하는지_테스트()
     {
-        assertThat(bowlingGame.sumOfRolls(1),is(18));
-        assertThat(bowlingGame.sumOfRolls(2),is(10));
-        assertThat(bowlingGame.sumOfRolls(19),is(19));
+        assertThat(bowlingGame.sumOfRolls(1),is(10));
+        assertThat(bowlingGame.sumOfRolls(2),is(5));
+        assertThat(bowlingGame.sumOfRolls(19),is(10));
 
     }
 
@@ -75,13 +75,13 @@ public class BowlingTest {
     public void testStrikeBonus() {
 
         int bonusScore = bowlingGame.strikeBonus(1);
-        assertThat(bonusScore, is(10));
+        assertThat(bonusScore, is(5));
     }
     @Test
     public void testSpareBonus() {
 
         int bonusScore = bowlingGame.spareBonus(2);
-        assertThat(bonusScore, is(3));
+        assertThat(bonusScore, is(5));
     }
     @Test
     public void 스코어리턴값에대한MOCKUP테스트(){
@@ -101,7 +101,7 @@ public class BowlingTest {
     @Test
     public void isStrike_스트라익일때_True를_반환하는지_확인하는_테스트(){
 
-        assertThat(bowlingGame.isStrike(1),is(true));
+        assertThat(bowlingGame.isStrike(18),is(true));
 
     }
 
@@ -118,15 +118,15 @@ public class BowlingTest {
     public void isSpare_스페어일때_True를_반환하는지_확인하는_테스트(){
 
 
-        assertThat(bowlingGame.isSpare(2),is(true));
-        assertThat(bowlingGame.isSpare(13),is(true));
+        assertThat(bowlingGame.isSpare(1),is(true));
+        assertThat(bowlingGame.isSpare(12),is(true));
 
     }
 
     @Test
     public void isSpare_스페어가_아닐때_False를_반환하는지_확인하는_테스트(){
 
-        assertThat(bowlingGame.isSpare(1),is(false));
+        assertThat(bowlingGame.isSpare(2),is(false));
         assertThat(bowlingGame.isSpare(3),is(false));
         assertThat(bowlingGame.isSpare(5),is(false));
         assertThat(bowlingGame.isSpare(7),is(false));
