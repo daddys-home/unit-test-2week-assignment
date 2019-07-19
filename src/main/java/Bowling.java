@@ -34,11 +34,11 @@ public class Bowling {
         return score;
     }
 
-    private boolean isStrike(int frame) {
+    public boolean isStrike(int frame) {
         return rolls[frame] == 10;
     }
 
-    private boolean isSpare(int frame) {
+    public boolean isSpare(int frame) {
         return sumOfRolls(frame) == 10;
     }
 
@@ -55,4 +55,5 @@ public class Bowling {
         }
         return rolls[frame] + rolls[frame+1];
     }
+
 }
