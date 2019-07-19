@@ -3,11 +3,14 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.internal.verification.Times;
 
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.mockito.Mockito.doThrow;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.atLeastOnce;
+
 
 public class BowlingTest {
     Bowling bowlingGame;
@@ -35,10 +38,39 @@ public class BowlingTest {
         bowlingGame.roll(3);
         bowlingGame.roll(10);
         bowlingGame.roll(9);
-
-        //bowlingGame.roll(1);
+        bowlingGame.roll(1);
 
     }
+
+    @Test
+    public void roll_셋업한_값이_rolls배열에_제대로_들어있는지_테스트()
+    {
+        assertThat(bowlingGame.getRolls()[1],is(10));
+        assertThat(bowlingGame.getRolls()[2],is(8));
+        assertThat(bowlingGame.getRolls()[20],is(9));
+
+    }
+
+
+    @Test
+    public void sumOfRolls_frame과_그_다음_값의_합을_잘_반환하는지_테스트()
+    {
+        assertThat(bowlingGame.sumOfRolls(1),is(18));
+        assertThat(bowlingGame.sumOfRolls(2),is(10));
+        assertThat(bowlingGame.sumOfRolls(19),is(19));
+
+    }
+
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void sumOfRolls_frame의_값이_20을_넘으면_BoundException()
+    {
+        bowlingGame.sumOfRolls(27);
+        assertThat(bowlingGame.sumOfRolls(20),is(19));
+        doThrow(new ArrayIndexOutOfBoundsException()).when(bowlingGame).sumOfRolls(30);
+
+
+    }
+
     @Test
     public void testStrikeBonus() {
 
